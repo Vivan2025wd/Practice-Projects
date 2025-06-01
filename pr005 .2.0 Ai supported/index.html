@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Client Demo Landing Page</title>
+    <meta name="description" content="Client Demo landing page showcasing features, testimonials, and contact form." />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Client Demo</h1>
+            <nav>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#form">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="tagline">Your logo and business name can go here.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <h2>Engage With Our Service</h2>
+            <h3>Hero Section</h3>
+            <p>Add your descriptions or hero product details here to engage your visitors.</p>
+            <a href="#form" class="btn-primary">Request Demo</a>
+        </section>
+
+        <section class="features" id="features">
+            <h2>Our Features</h2>
+            <h3>Why Choose Us</h3>
+            <ul>
+                <li>High Quality</li>
+                <li>User Friendly</li>
+                <li>Affordable</li>
+            </ul>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <h2>What Clients Say</h2>
+            <h3>Testimonials</h3>
+            <blockquote>
+                <p>"This service has changed my life!" – Happy Client</p>
+            </blockquote>
+        </section>
+
+        <section class="form" id="form">
+            <h2>Contact Us</h2>
+            <h3>Get In Touch</h3>
+            <form action="#" method="post" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true" />
+
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <h3>Who We Are</h3>
+            <p>Information about your company or service goes here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Client Demo. All rights reserved.</p>
+            <p>Follow us on social media for updates!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle navigation for mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        navToggle.addEventListener('click', () => {
+            navList.classList.toggle('nav-list-visible');
+        });
+    </script>
+</body>
+</html>

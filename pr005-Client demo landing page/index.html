@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Client Demo Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to Client Demo</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#form">Contact</a></li>
+            </ul>
+        </nav>
+        <p>This is a header and your logo and business name can go here.</p>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <h2>This is a section 1</h2>
+            <h3>Hero Section</h3>
+            <p>I can add your descriptions a hero product etc here so that the potential viewer is engaged with your Service.</p>
+        </section>
+        <section class="features" id="features">
+            <h2>This is a section 2</h2>
+            <h3>Features Section</h3>
+            <ul>
+                <li>Feature 1: High Quality</li>
+                <li>Feature 2: User Friendly</li>
+                <li>Feature 3: Affordable</li>
+            </ul>
+        </section>
+        
+        <section class="testimonials" id="testimonials">
+            <h2>This is a section 3</h2>
+            <h3>Testimonials Section</h3>
+            <blockquote>
+                <p>"This service has changed my life!" - Happy Client</p>
+            </blockquote>
+        </section>
+        
+        <!-- Fixed typo here: class="form" -->
+        <section class="form" id="form">
+            <h2>This is a section 4</h2>
+            <h3>Contact Form Section</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+        <section class="about" id="about">
+            <h2>This is a section 6</h2>
+            <h3>About Section</h3>
+            <p>Here you can add some information about your company or service.</p>
+        </section> <!-- Closed missing tag -->
+
+    </main>
+
+    <div class="effects" id="effects">
+        <h2>special effects</h2>
+        <p>Here are some cool effects or animations ill be adding to make the page more engaging.</p>
+        <button onclick="alert('Button clicked!')">Click Me!</button>
+        <p> by clicking the above button the client will be notified.</p>
+        <button id="hoverButton">Hover over me!</button>
+        <p>This is a hover effect.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Client Demo. All rights reserved.</p>
+        <p>Follow us on social media for updates!</p>
+    </footer>
+</body>
+</html>
